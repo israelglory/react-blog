@@ -1,4 +1,5 @@
 import RegularNews from './regular_news';
+import React from 'react'
 function HomeRegularNews ({blogs}) {
     return (
         <div className="grid-container">

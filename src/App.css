@@ -52,6 +52,10 @@
   padding-bottom: 16px;
 }
 
+.nav{
+  display: inline;
+}
+
 .header-div ul, li{
   list-style-type: none;
   margin: 0;
@@ -302,4 +306,21 @@ height: 50px;
   
   margin-top: 34px;
   margin-bottom: 20px;
+}
+
+.menu{
+  display: none;
+}
+
+@media (max-width: 830px){
+  .nav{
+      display: none;
+  }
+  .search-div{
+      display: none;
+  }
+  .menu{
+      display: inline;
+
+  }
 }

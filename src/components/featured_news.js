@@ -1,4 +1,5 @@
 //import featuredImage from './images/featured.png';
+import React from 'react'
 function FeaturedNews () {
     return (
         <div className="featured-news">

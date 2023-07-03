@@ -1,4 +1,6 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import React from 'react';
+import { FcList } from "react-icons/fc";
 
 
 function Header({title, onHomeClick, onAboutClick, onContactClick}){
@@ -7,7 +9,8 @@ function Header({title, onHomeClick, onAboutClick, onContactClick}){
             <h1>{title}</h1>
            
             {/* list of buttons */}
-            <ul>
+            <div className='nav'>
+            <ul >
                 <li><button className="btn btn-primary" onClick={() => {
                     onHomeClick();
                 }}>UI Design</button></li>
@@ -21,9 +24,11 @@ function Header({title, onHomeClick, onAboutClick, onContactClick}){
                     onContactClick();
                 }}>Mobile</button></li>
             </ul>
+            </div>
             <div className="search-div"> 
             Search
             </div>
+            <FcList className="menu" color="white"/>
         </div>
     );
 

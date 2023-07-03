@@ -1,4 +1,4 @@
-import featuredImage from './images/featured.png';
+//import featuredImage from './images/featured.png';
 function RegularNews ({title, description, author, date, image, authorImage, category, authorTitle}) {
     return (
         <div className="regular-news">

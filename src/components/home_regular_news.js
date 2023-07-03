@@ -1,4 +1,3 @@
-import featuredImage from './images/featured.png';
 import RegularNews from './regular_news';
 function HomeRegularNews ({blogs}) {
     return (

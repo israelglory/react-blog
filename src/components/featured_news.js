@@ -1,5 +1,5 @@
-import featuredImage from './images/featured.png';
-function FeaturedNews ({}) {
+//import featuredImage from './images/featured.png';
+function FeaturedNews () {
     return (
         <div className="featured-news">
         <div className='featured-news-item'>

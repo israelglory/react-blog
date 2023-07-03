@@ -9,12 +9,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 1s ease-in-out;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,271 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: inset;
+  justify-content: space-between;
+  padding: 0px 20px;
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  background-color: rgba(55, 65, 81, 1);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header-div ul, li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  padding-left: 16px;
+  color: #FFF;
+  font-size: 16px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-div h1{
+  font-size: 24px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+}
+
+
+
+.btn-primary{
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 8px;
+}
+
+.search-div{
+  border-radius: 100px;
+  background: rgba(31, 41, 55, 0.60);
+  padding: 10px 40px;
+  color: #FFF;
+  font-size: 16px;
+}
+
+.featured-news{
+  padding: 0px 20px;
+  margin-top: 20px;
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap; /* Allows items to wrap to a new line when there's not enough space */
+  justify-content: space-between;
+}
+
+.featured-news-item{
+  flex: 0 0 calc(50% - 10px); /* Each item takes up 33.33% of the container width with a small gap */
+  margin: 5px;
+}
+
+
+.featured-news-title{
+  font-size: 24px;
+  font-family: Patrick Hand;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFF;
+}
+
+.featured-img{
+  width: 100%;
+ 
+  border-radius: 10px;
+}
+.regular-img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.featured-news-description{
+  font-size: 16px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.60);
+  padding-top: 10px;
+}
+
+.category-text{
+  color: rgba(255, 255, 255, 0.60);
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  font-family: Patrick Hand;
+  line-height: normal;
+  color: #FFF;
+  margin: 0px;
+}
+.featured-news-content{
+  padding: 0px 20px;
+  margin-top: 10px;
+}
+
+.author-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 0px 0px;
+  margin-top: 20px;
+}
+
+.author-img{
+  border-radius: 50px;
+background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKXXqjQBMKkHmsC15lP-nFTJF3igtndYCWnfwyUOxJT5xON1YsDXRtH-oxlVKEyTqP9FE&usqp=CAU"), lightgray 50% / cover no-repeat;
+width: 50px;
+height: 50px;
+}
+.author-name{
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.author-title{
+  font-size: 12px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.author-info{
+  padding-left: 16px;
+}
+
+
+.regular-news{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0px 0px;
+  margin-top: 20px;
+}
+
+
+.regular-news-title{
+  font-size: 24px;
+  font-family: Patrick Hand;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFF;
+}
+
+.regular-news-description{
+  font-size: 16px;
+  font-family: Patrick Hand;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.60);
+  padding-top: 10px;
+}
+
+
+.regular-news-content{
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between; */
+  padding: 0px 0px;
+  margin-top: 10px;
+
+  
+}
+
+/* The grid container */
+.grid-container {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap; /* Allows items to wrap to a new line when there's not enough space */
+  justify-content: space-between; /* Distributes items evenly, leaving space between them */
+}
+
+/* The grid items */
+.grid-item {
+  flex: 0 0 calc(33.33% - 15px); /* Each item takes up 33.33% of the container width with a small gap */
+  margin: 5px;
+}
+
+
+
+/* Media query to reduce the number of items to two in smaller screens */
+@media (max-width: 1135px) {
+  .grid-item {
+    flex-basis: calc(50% - 15px); /* Each item takes up 50% of the container width with a small gap */
+  }
+  .featured-news-item{
+    flex: calc(100%); /* Each item takes up 33.33% of the container width with a small gap */
+   
+  }
+  .featured-news{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 0px 0px;
+    margin-top: 20px;
+  }
+  .featured-img{
+    width: 100%,
+  }
+  
+  .featured-news-content{
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; */
+    padding: 0px 0px;
+    margin-top: 10px;
+  }
+}
+
+/* Media query to show one item on even smaller screens */
+@media (max-width: 480px) {
+  .grid-item {
+    flex-basis: 100%; /* Each item takes up 100% of the container width, spanning the whole row */
+  }
+  .featured-img{
+    max-width: 100%,
+  }
+  .featured-news-item{
+    flex: 100%; /* Each item takes up 33.33% of the container width with a small gap */
+    
+  }
+}
+
+.page-title{
+  font-size: 24px;
+  font-family: Patrick Hand;
+  font-weight: 700;
+  line-height: normal;
+  color: #FFF;
+  
+  margin-top: 34px;
+  margin-bottom: 20px;
 }
